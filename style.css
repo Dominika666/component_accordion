@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: red;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+.fa-brands {
+    margin-right: 20px;
+    color: red;
+}
+
+.accordion {
+    width: 800px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.accordion-box {
+    margin: 20px;
+}
+
+.accordion-btn {
+    padding: 1em;
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.accordion-btn:hover,
+.accordion-btn:focus {
+    background-color: red;
+    color: #fff;
+    outline: none;
+}
+
+.accordion-btn:hover .fa-brands,
+.accordion-btn:focus .fa-brands {
+    color: #fff;
+}
+
+.accordion-info {
+    display: none;
+    padding: 1em 2em;
+}
+
+.active {
+    display: block;
+}
